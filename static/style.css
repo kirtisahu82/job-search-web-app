@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(to right, #56ccf2, #2f80ed);
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.search-box {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 400px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+
+.radio-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 15px 0;
+}
+
+.radio-box label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.radio-box input[type="radio"] {
+    width: auto;
+    margin: 0;
+}
+
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #2f80ed;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1c5ed6;
+}
+
+
+
+.result-page {
+    background: #f4f7fb;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.home-btn {
+    margin: 15px;
+    background: white;
+    color: #2f80ed;
+    padding: 8px 18px;
+    border-radius: 50px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.home-btn:hover {
+    background: #f1f1f1;
+}
+
+
+.result-title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 26px;
+    color: #2c3e50;
+}
+
+
+.table-container {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+
+th {
+    background: #2f80ed;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+}
+
+
+td {
+    padding: 12px;
+    font-size: 14px;
+    border-bottom: 1px solid #eee;
+}
+
+
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+
+tr:hover {
+    background: #eaf3ff;
+}
+
+
+@media (max-width: 768px) {
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
+
+.chart-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.chart-box {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Job Search</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<form action="/search" method="POST" class="search-box">
+    <h1>🔍</h1>
+    <h2>AMBITION BOX JOB ANALYSIS</h2>
+    
+    <input id="location" list="location_list" name="location" class="form-control mb-3" placeholder="Select Location">
+    <datalist id="location_list">
+        {% for l in location %}
+            <option value="{{ l }}">
+        {% endfor %}
+    </datalist>
+
+   
+    <input id="industry" list="industry_list" name="about" class="form-control mb-3" placeholder="Select Industry">
+    <datalist id="industry_list">
+        {% for i in about %}
+            <option value="{{ i }}">
+        {% endfor %}
+    </datalist>
+
+    
+    <input id="ratings" list="ratings_list" name="ratings" class="form-control mb-3" placeholder="Select Ratings">
+    <datalist id="ratings_list">
+        {% for i in ratings %}
+            <option value="{{ i }}">
+        {% endfor %}
+    </datalist>
+
+
+     <div class="radio-box">
+        <label>
+            <input type="radio" name="output" value="table" checked>
+            📊 Show Table
+        </label>
+
+        <label>
+            <input type="radio" name="output" value="Visualization">
+            📈 Show Visualization
+        </label>
+    </div>
+
+    
+    <button class="btn btn-primary">Search</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
