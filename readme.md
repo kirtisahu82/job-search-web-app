@@ -162,7 +162,7 @@ pip install flask pandas matplotlib
 
 
 
-git clone https://github.com/your-username/job-search-web-app.git
+git clone https://github.com/kirtisahu82/job-search-web-app.git
 
 
 
